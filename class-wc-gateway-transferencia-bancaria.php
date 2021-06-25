@@ -34,7 +34,7 @@ function woocommerce_transferencia_bancaria_init() {
 			$this->id                 = 'tc';
 			$this->icon               = '';
 			$this->has_fields         = false;
-			$this->method_title       = __( 'Transferencia bancaria', 'woocommerce' );
+			$this->method_title       = __( 'Transferencia Bancaria', 'woocommerce' );
 			$this->method_description = __( 'Mostrar información para transferencia bancaria.', 'woocommerce' );
 
 			// Load the settings.
@@ -117,10 +117,10 @@ function woocommerce_transferencia_bancaria_init() {
 							<thead>
 								<tr>
 									<th class="sort">&nbsp;</th>
-									<th><?php esc_html_e( 'Account name', 'woocommerce' ); ?></th>
-									<th><?php esc_html_e( 'Account number', 'woocommerce' ); ?></th>
-									<th><?php esc_html_e( 'Bank name', 'woocommerce' ); ?></th>
-									<th><?php esc_html_e( 'Account type', 'woocommerce' ); ?></th>
+									<th><?php esc_html_e( 'Nombre del Titular', 'woocommerce' ); ?></th>
+									<th><?php esc_html_e( 'Número de Cuenta', 'woocommerce' ); ?></th>
+									<th><?php esc_html_e( 'Banco', 'woocommerce' ); ?></th>
+									<th><?php esc_html_e( 'Tipo de Cuenta', 'woocommerce' ); ?></th>
 									<th><?php esc_html_e( 'RUT', 'woocommerce' ); ?></th>
 									<th><?php esc_html_e( 'Email', 'woocommerce' ); ?></th>
 								</tr>
@@ -259,15 +259,15 @@ function woocommerce_transferencia_bancaria_init() {
 						'woocommerce_bacs_account_fields',
 						array(
 							'bank_name'      => array(
-								'label' => __( 'Bank', 'woocommerce' ),
+								'label' => __( 'Banco', 'woocommerce' ),
 								'value' => $tc_account->bank_name,
 							),
 							'account_number' => array(
-								'label' => __( 'Account number', 'woocommerce' ),
+								'label' => __( 'Número de Cuenta', 'woocommerce' ),
 								'value' => $tc_account->account_number,
 							),
 							'account_type'      => array(
-								'label' => __( 'Account type', 'woocommerce' ),
+								'label' => __( 'Tipo de Cuenta', 'woocommerce' ),
 								'value' => $tc_account->account_type,
 							),
 							'rut'           => array(
